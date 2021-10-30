@@ -1,0 +1,21 @@
+.info-email {
+    font-weight: 600;
+    font-size: 14px;
+    color: $title;
+    // этот margin не сработал, так как у нас сслыка
+    margin-bottom: 22px;
+    padding-left: 30px;
+    // зададим стиль, при котором заработает
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/icons/envelope.svg");
+        background-repeat: no-repeat;
+        left: 0;
+        width: 16px;
+        top: 8px;
+        height: 12px;
+    }
+}

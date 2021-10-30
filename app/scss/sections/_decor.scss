@@ -1,0 +1,31 @@
+.decor {
+    background-image: url("../images/content/decor_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    padding: 176px 0 156px;
+    &__title {
+        @extend %title-font;
+        max-width: 731px;
+        color: $title;
+        font-size: 60px;
+        line-height: 80px;
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        position: relative;
+        &::after {
+            content: "";
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            height: 1px;
+            background: #6d7278;
+            margin: 0 auto;
+            width: 200px;
+        }
+    }
+    &__text {
+        max-width: 540px;
+    }
+}

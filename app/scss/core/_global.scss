@@ -1,0 +1,67 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	color: $default;
+	overflow-x: hidden;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+// прижимаем footer к низу страницы
+// на много страничниках всегда футер должен быть прижат к низу страницы
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	// figma -> container 1110px
+	// учитавая паддинги слева и справа 1110 + 30
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	button{
+		background-color: $title;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+	}
+	li{
+		margin: 0 15px;
+	}
+	li.slick-active{
+		button{
+			background-color: #ffef35;
+		}
+	}
+}

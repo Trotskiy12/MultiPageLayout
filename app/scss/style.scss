@@ -1,0 +1,33 @@
+// abstract files
+@import "abstracts/vars";
+
+// core files
+@import "core/fonts";
+@import "core/reset";
+@import "core/libs";
+@import "core/global";
+
+// layouts files
+@import "layouts/header";
+@import "layouts/footer";
+
+// components files
+@import "components/collection";
+@import "components/breadcrumbs";
+@import "components/rightside-menu";
+@import "components/info-email";
+
+// sections files
+@import "sections/top";
+@import "sections/works-path";
+@import "sections/decor";
+@import "sections/blog-box";
+@import "sections/inspiration";
+
+
+// pages
+@import "pages/gallery";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/blog";
+

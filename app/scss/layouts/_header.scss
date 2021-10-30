@@ -1,0 +1,48 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.menu {
+    padding-right: 15px;
+    &__list {
+        display: flex;
+    }
+    &__list-item {
+        padding-right: 45px;
+        padding-left: 35px;
+    }
+    &__list-link {
+        @extend %title-font;
+        color: rgba(54, 56, 56, 0.9033);
+        line-height: 22px;
+        &--active{
+            padding-bottom: 4px;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                border-radius: 1px;
+                background-color: rgba($title, .7);
+            }
+        }
+    }
+}
