@@ -10,6 +10,9 @@
             height: 722px;
             top: 0;
             z-index: -1;
+            @include tablets{
+                height: 100%;
+            }
         }
     }
     &__slider-item {
@@ -23,6 +26,12 @@
         height: 815px;
         // чтобы картинка любого размера нормально смотрелась
         object-fit: cover;
+        @include desktop{
+            height: 640px;
+        }
+        @include tablets{
+            height: 540px;
+        }
     }
     &__slider-info {
         max-width: 645px;
@@ -35,6 +44,14 @@
         padding-bottom: 26px;
         margin-bottom: 26px;
         position: relative;
+        @include desktop{
+            font-size: 62px;
+            line-height: 74px;
+        }
+        @include tablets{
+            font-size: 44px;
+            line-height: 54px;
+        }
         &::after {
             content: "";
             position: absolute;

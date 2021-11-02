@@ -1,6 +1,36 @@
+@media (max-width: 1366px) {
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
 @mixin tablets {
     @media screen and (max-width: $tablets) {
         @content;
+    }
+}
+
+@media (max-width: 650px) {
+    .top {
+        &__inner {
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+        &__slider-item {
+            .top__slider-img {
+                display: none;
+            }
+        }
+        &__slider-text {
+            margin-bottom: 15px;
+        }
     }
 }
 
