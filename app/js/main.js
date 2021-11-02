@@ -8,6 +8,11 @@ $(function () {
         $('.rightside-menu').addClass('rightside-menu--close');
     });
 
+    $('.header__btn-mobile').on('click', function(){
+        $('.menu').toggleClass('menu--open');
+    });
+
+
     $('.top__slider').slick({ 
         // точки вслючить
         dots: true,
