@@ -9,6 +9,7 @@
   }
   &__item{
     position: relative;
+    padding-right: 8px;
   }
   &__item::after{
     content: "/";
