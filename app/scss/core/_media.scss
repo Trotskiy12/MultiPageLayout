@@ -213,7 +213,6 @@
         &__items-box {
             border-bottom: none;
             flex-wrap: wrap;
-            // display: block;
         }
         &__item--meas {
             margin-left: 0;
@@ -240,10 +239,6 @@
         }
         &__img {
             width: 100%;
-        }
-    }
-    .contact {
-        &__form-input {
         }
     }
     .slick-dots li {

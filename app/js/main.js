@@ -25,8 +25,6 @@ $(function () {
         arrows: false,
         // плавный переход
         fade: true,
-        // автоматическое использование
-        // autoplay: true
     });
 
     $('.contact-slider').slick({
