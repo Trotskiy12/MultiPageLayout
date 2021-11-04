@@ -23,7 +23,7 @@
             left: 0;
             width: 200px;
             height: 2px;
-            background-color: #6d7278;
+            background-color: $back;
         }
     }
     .contact__social {
@@ -42,12 +42,8 @@
     &__social-item + .contact__social-item {
         padding-left: 40px;
     }
-    &__social-link {
-    }
     &__phone {
         color: $default;
-    }
-    &__st {
     }
     &__city {
         margin-bottom: 16px;
@@ -60,13 +56,13 @@
     }
 
     &__form-input {
-        border: 1px solid #dfdfdf;
+        border: 1px solid $border;
         border-radius: 20px;
         padding: 6px 17px;
         margin-bottom: 13px;
         width: 48%;
         &::placeholder {
-            color: #a1a1a1;
+            color: $placeholder;
             font-size: 16px;
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
@@ -76,14 +72,14 @@
     }
     &__form-area {
         width: 100%;
-        border: 1px solid #dfdfdf;
+        border: 1px solid $border;
         border-radius: 24px;
         padding: 14px 17px;
         min-height: 125px;
         resize: none;
         margin-bottom: 20px;
         &::placeholder {
-            color: #a1a1a1;
+            color: $placeholder;
             font-size: 16px;
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
@@ -102,8 +98,6 @@
     }
 }
 
-.container-fluid {
-}
 .contact-slider {
     padding-bottom: 102px;
     &__link {
@@ -128,7 +122,7 @@
         top: 0;
         bottom: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: rgba(#fff, 0.6);
         color: $title;

@@ -1,3 +1,11 @@
+@media (max-width: 1700px) {
+    .contact-slider {
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 1366px) {
     .collection {
         grid-template-columns: repeat(3, 1fr);
@@ -18,6 +26,32 @@
         &__slider-img {
             height: 640px;
         }
+    }
+    .contact-slider {
+        &__img {
+            height: 240px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .blog {
+        &__items {
+            max-width: 100%;
+        }
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item-img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .aside {
+        width: 100%;
+        margin-left: 0;
+        order: -1;
+        margin-bottom: 50px;
     }
 }
 
@@ -208,6 +242,13 @@
             width: 100%;
         }
     }
+    .contact {
+        &__form-input {
+        }
+    }
+    .slick-dots li {
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -256,6 +297,9 @@
         &__list-link {
             display: block;
             padding: 15px 0;
+            &--active::after {
+                display: none;
+            }
         }
     }
     .collection {
@@ -276,6 +320,54 @@
         &__item-title {
             font-size: 22px;
             line-height: 36px;
+        }
+    }
+    .blog__category-title,
+    .recent-posts__title,
+    .blog__tags-title,
+    .blog__blockquote-author{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .blog{
+        &__item-title{
+            font-size: 24px;
+            line-height: 38px;
+        }
+    }
+    .blog-one{
+        &__link{
+            span{
+                display: none;
+            }
+        }
+        &__links{
+            padding: 30px 0;
+        }
+        &__form-input{
+            width: 100%;
+        }
+        &__comments-name,
+        &__form-title{
+            font-size: 16px;
+            line-height: 27px;
+        }
+        &__comments-item{
+            flex-wrap: wrap;
+        }
+        &__comments-avatar{
+            width: 45px;
+            height: 45px;
+        }
+        &__comments-name,
+        &__comments-date{
+            margin-left: 55px;
+        }
+        &__comments-info{
+            margin-top: -46px;
+        }
+        &__reply{
+            margin-left: 0;
         }
     }
     .gallery {
@@ -309,6 +401,7 @@
             line-height: 23px;
         }
     }
+
 }
 @media (max-width: 375px) {
     .footer {
@@ -332,6 +425,17 @@
     }
     .decor {
         min-height: 375px;
+    }
+    .contact-slider {
+        &__img {
+            height: 310px;
+        }
+    }
+    .slick-dots li {
+        margin: 0 1px;
+    }
+    .blog-one__item blockquote{
+        padding: 0 20px;
     }
 }
 

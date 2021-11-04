@@ -39,7 +39,7 @@
             bottom: 0;
             left: 0;
             width: 200px;
-            background-color: #6d7278;
+            background-color: $back;
             height: 1px;
         }
     }
@@ -59,8 +59,6 @@
         padding-bottom: 14px;
         border-bottom: 2px solid #fff;
         border-radius: 4px;
-    }
-    &__num {
     }
     &__line {
         height: 2px;

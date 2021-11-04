@@ -59,7 +59,7 @@
             right: 0;
             height: 1px;
             width: 200px;
-            background: #6d7278;
+            background: $back;
             margin: 0 auto;
         }
     }
@@ -116,8 +116,6 @@
     &__social-item {
         margin-right: 20px;
     }
-    &__social-link {
-    }
 }
 
 .aside {
@@ -138,7 +136,7 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 27px;
-            color: #a1a1a1;
+            color: $placeholder;
         }
     }
     &__search-btn {
@@ -161,19 +159,15 @@
     &__item {
         margin-bottom: 11px;
     }
-    &__list {
-    }
     &__item-title {
         display: block;
         color: inherit;
     }
     &__date,
     &__author {
-        color: #a1a1a1;
+        color: $placeholder;
         font-size: 14px;
     }
-}
-.recent-posts-item {
 }
 
 .article-slider {
@@ -207,9 +201,6 @@
         opacity: 0;
         pointer-events: none;
     }
-
-    &__arrow-icon {
-    }
     &__list {
         display: flex;
     }
@@ -224,9 +215,6 @@
         &--active {
             color: $title;
         }
-    }
-
-    &__list-num--active {
     }
 }
 
@@ -272,8 +260,8 @@
     }
     &__links {
         padding: 40px 0px;
-        border-top: 1px solid #dfdfdf;
-        border-bottom: 1px solid #dfdfdf;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
         display: flex;
         justify-content: space-between;
         margin-bottom: 35px;
@@ -313,8 +301,6 @@
 }
 
 .blog-one {
-    &__comments {
-    }
     &__comments-title {
         color: $title;
         @extend %title-font;
@@ -335,8 +321,6 @@
         border-radius: 50%;
         margin-right: 13px;
     }
-    &__comments-info {
-    }
     &__comments-name {
         color: $title;
         @extend %title-font;
@@ -345,9 +329,7 @@
     &__comments-date {
         margin-bottom: 10px;
         font-size: 14px;
-        color: #a1a1a1;
-    }
-    &__comments-text {
+        color: $placeholder;
     }
     &__comments-reply {
         background-color: transparent;
@@ -375,14 +357,14 @@
     }
     &__form-textarea {
         width: 100%;
-        border: 1px solid #dfdfdf;
+        border: 1px solid $border;
         border-radius: 24px;
         padding: 14px 17px;
         min-height: 125px;
         resize: none;
         margin-bottom: 12px;
         &::placeholder {
-            color: #a1a1a1;
+            color: $placeholder;
             font-size: 16px;
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
@@ -391,13 +373,13 @@
         }
     }
     &__form-input {
-        border: 1px solid #dfdfdf;
+        border: 1px solid $border;
         border-radius: 20px;
         padding: 6px 17px;
         margin-bottom: 20px;
         width: 48%;
         &::placeholder {
-            color: #a1a1a1;
+            color: $placeholder;
             font-size: 16px;
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
@@ -409,9 +391,7 @@
         width: 100%;
         margin-bottom: 20px;
         font-size: 14px;
-        color: #a1a1a1;
-    }
-    &__form-labelinput {
+        color: $placeholder;
     }
     &__form-btn {
         border: none;

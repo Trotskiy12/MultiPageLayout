@@ -1,6 +1,6 @@
 .footer {
     &__content {
-        background: #dfdfdf;
+        background: $border;
         padding: 60px 0 80px;
     }
     &__inner {
@@ -38,7 +38,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            color: #a1a1a1;
+            color: $placeholder;
         }
     }
     &__form-button {
@@ -115,7 +115,7 @@
     &__copyright {
         background-color: $title;
         line-height: 28px;
-        color: #a1a1a1;
+        color: $placeholder;
         text-align: center;
         padding: 42px 15px 41px;
     }
